@@ -1,0 +1,670 @@
+@charset "UTF-8";
+@import url("globalReset.css");
+//CSS reset strip out all the styles /*----------------------Main Page CSS and Structure CSS------------------------------*/
+body {
+ margin: 0;
+ padding: 0;
+ font-size: 62.5%;
+}
+#wrapper {
+	margin: 0 auto;
+	width: 960px;
+	-moz-border-radius: 12px;
+	-webkit-border-radius: 12px;
+	border-radius: 12px;
+}
+#header {
+	width: 960px;
+	height: 140px;
+}
+#container {
+	width: 960px;
+	height: 840px;
+}
+#nav {
+	height: 40px;
+	margin: 0;
+	padding: 0;
+	-moz-border-radius-topleft: 12px;
+	-webkit-border-top-left-radius: 12px;
+	-moz-border-radius-topright: 12px;
+	-webkit-border-top-right-radius: 12px;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+	background-color:#313131;
+}
+#nav ul#mainNav { padding-left: 10px; }
+#nav ul li {
+	float: left;
+	width: 110px;
+	list-style: none;
+}
+#nav ul li a {
+	display: block;
+	padding: 0 5px;
+	line-height: 40px;
+	text-decoration: none;
+	text-align:center;
+	border-right: 1px solid white;
+	color: #f1f1f1;
+	white-space: nowrap;
+}
+#nav ul#mainNav li a.lastChild { border-right-style: none; }
+#nav ul li a:hover {
+	background: #add7d9;
+	color: #333;
+}
+#nav li ul ul {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	visibility: hidden;
+	border-top: 1px solid white;
+}
+#nav li ul ul:first-child {
+	margin: 0;
+	padding: 0;
+}
+#nav li ul li {
+	list-style: none;
+	float: none;
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+#nav li ul li a {
+	width: auto;
+	background: #add7d9;
+	color: #333;
+	text-decoration: none;
+	text-align: left;
+	padding-left: 17px;
+}
+#mainNav .currentPage {
+	background:red;
+	color:#fff;
+}
+#nav li ul li a:hover {
+	background: #f1f1f1;
+	color: #333;
+}
+#icon {
+	float: right;
+	margin: 4px 40px 4px 0;
+}
+#icon a { padding-left: 5px; }
+#icon img { opacity: 0.6; }
+#icon img:hover { opacity: 1; }
+#content {
+	float:left;
+	height:800px;
+	overflow:hidden;
+	position:relative;
+	width:960px;
+	margin-top: -18px;
+	background: url(../_images/bg1.jpg) repeat;
+}
+.sections {
+	width: 5760px;
+	position: relative;
+}
+.sections .section {
+	width: 960px;
+	height: 800px;
+	float: left;
+	position: relative;
+	background: url(../_images/bg1.jpg) repeat;
+}
+.sections .section .sub {
+	width: 960px;
+	height: 2400px;
+	position: relative;
+}
+.sections .section ul.sub li {
+	width: 960px;
+	height: 800px;
+	display: block;
+	position: relative;
+	float: left;
+}
+#contact3, #contact2, #contact1, #event3, #event2, #event1, #gallery3, #gallery2, #gallery1 { position:relative; }
+.subTitle {
+	font-size: 1.8em;
+	color: #313131;
+	margin: 15px 0 10px 15px;
+	font-weight: 800;
+}
+.subNav .top img {
+	position: absolute;
+	right: 0px;
+	bottom: 80px;
+}
+.subNav .bottom img {
+	position: absolute;
+	right: 0px;
+	bottom: 50px;
+}
+.posAbs { position: absolute; }
+.subPage {
+	display: block;
+	width: 150px;
+	color: #000;
+	background-color: #fff;
+	position: absolute;
+	top: 180px;
+	z-index: 20;
+	visibility: hidden;
+}
+#footer {
+	-moz-border-radius-bottomleft: 12px;
+	-webkit-border-bottom-left-radius: 12px;
+	-moz-border-radius-bottomright: 12px;
+	-webkit-border-bottom-right-radius: 12px;
+	border-bottom-left-radius: 12px;
+	border-bottom-right-radius: 12px;
+	background: #313131;
+	height: 40px;
+	color: #f5f5f5;
+	font: 1em/1.4em Verdana, Arial, Helvetica, sans-serif;
+	padding: 5px 20px 7px;
+	margin-top: -1.8px;
+}
+#footer div { margin-top: -3px; }
+#footer #footerLeft {
+	width: 280px;
+	float: left;
+	padding-right: 40px;
+}
+#footer .address { float: left; }
+#footer address {
+	float: left;
+	padding-left: 5px;
+}
+#footer #footerCenter {
+	float: left;
+	width: 280px;
+	padding-right: 40px;
+}
+#footer #footerRight {
+	float: right;
+	width: 280px;
+}
+#footer a { text-decoration: none; }
+#footer a:hover { color: #fff; }
+/*----------------------Home Page css------------------------------*/
+#homePage #bgImg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+#homePage #homeFrame {
+	position: absolute;
+	top: 530px;
+	left: 17px;
+	z-index: 3;
+}
+#homePage #homeFrame div {
+	float: left;
+	margin-left: 30px;
+	width: 270px;
+	height: 220px;
+	background-color: rgba(49, 49, 49, 0.75);
+	border-top: 12px solid #b4f4f6;
+}
+#homePage #homeFrame div h3 {
+	font: 1.4em "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #b4f4f6;
+	font-weight: bold;
+	margin: 10px 0;
+	padding: 0 10px;
+}
+#homePage #homeFrame div p, #homePage #homeFrame div a {
+	padding: 0 10px;
+	color: #f1f1f1;
+	font: 1em/1.4em "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+#homePage #homeFrame div a { text-decoration: none; }
+#homePage #homeFrame div a:hover { color: #000; }
+#homePage #homeFrame #swf {
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+/*----------------------Event Page Second Event CSS------------------------------*/
+ .section .sub #event2 #slideshow1 {
+	width: 360px;
+	height: 800px;
+	margin-right: 40px;
+	float: left;
+}
+.section .sub #event2 #eventSecond {
+	float: left;
+	width: 540px;
+}
+.section .sub #event2 #eventSecond .subTitle { text-align: center; }
+.section .sub #event2 #eventSecond .eventDate {
+	font-size: 0.8em;
+	color: #3e3e3e;
+	display: block;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+.section .sub #event2 #eventSecond #eventText h3 {
+	font-size: 1.2em;
+	color: #333;
+	display: block;
+	margin-bottom: 25px;
+	line-height: 1.6em;
+}
+.section .sub #event2 #eventSecond #eventText #festInclude p {
+	padding: 10px;
+	color: #333;
+	font: 1.2em "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-transform: lowercase;
+	width:90%;
+	margin: 0;
+}
+.section .sub #event2 #slideshow1 img {
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:8;
+	opacity:0.0;
+}
+.section .sub #event2 #slideshow1 img.active {
+	z-index:10;
+	opacity:1.0;
+}
+.section .sub #event2 #slideshow1 img.last-active { z-index:9; }
+/*----------------------Event Page first Event CSS------------------------------*/
+ .section .sub #event1 #slideshow {
+	width: 960px;
+	height: 360px;
+	background: #FF3;
+	margin: 20px 0;
+	position: relative;
+}
+.section .sub #event1 #eventText {
+	width: 580px;
+	margin: 0 20px;
+	padding: 10px;
+	font: 1em/1.6em "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #333;
+	background-color: rgba(247, 243, 204, 0.5);
+	-moz-box-shadow: 1px 1px 4px #333;
+	-webkit-box-shadow:  1px 1px 4px #333;
+	box-shadow:  1px 1px 4px #333;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	float: left;
+}
+.section .sub #event1 #eventText p { padding-bottom: 5px; }
+ .section .sub #event1 #eventText p::first-letter {
+ padding-left: 25px;
+}
+.section .sub #event1 #poster {
+	float: left;
+	-moz-box-shadow: 1px 1px 4px #333;
+	-webkit-box-shadow:  1px 1px 4px #333;
+	box-shadow:  1px 1px 4px #333;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background-color: #313131;
+	padding: 10px;
+	margin-left: 20px;
+}
+.section .sub #event1 #slideshow img {
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:8;
+	opacity:0.0;
+}
+.section .sub #event1 #slideshow img.active {
+	z-index:10;
+	opacity:1.0;
+}
+#event1 #slideshow img.last-active { z-index:9; }
+/*----------------------Gallery Page books subpage CSS------------------------------*/
+.section .sub #gallery3 #bookFrame {
+	width: 880px;
+	margin-left: 40px;
+	float: left;
+}
+.section .sub #gallery3 div.books {
+	padding: 20px;
+	-moz-box-shadow: 1px 1px 4px #333;
+	-webkit-box-shadow:  1px 1px 4px #333;
+	box-shadow:  1px 1px 4px #333;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background-color: #616161;
+	float: left;
+	height: 120px;
+	margin-top: 20px;
+	font: 1em/1.4em "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+.section .sub #gallery3 div.books h2 {
+	font-size: 1.2em;
+	font-weight: bold;
+	color: white;
+	margin-bottom: 8px;
+}
+.section .sub #gallery3 div.books h3 {
+	font-weight: bold;
+	font-style: italic;
+	color: white;
+	margin-bottom: 8px;
+}
+.section .sub #gallery3 div.books p {
+	color: #ccc;
+	font-size: 0.8em;
+}
+.section .sub #gallery3 div.books div.bookPhoto {
+	float: left;
+	width: 120px;
+}
+.section .sub #gallery3 div.books div.bookPhoto img {
+	margin-left: 20px;
+	border: thick solid #616161;
+}
+.section .sub #gallery3 div.books div.bookDesc {
+	float: left;
+	width: 500px;
+	margin-left: 20px;
+}
+.section .sub #gallery3 div.books div.bookDesc a {
+	display: block;
+	float: right;
+	color: #fff;
+	text-decoration: none;
+	margin-top: 5px;
+}
+#gallery3 div.books div.bookDesc a:hover { color: #ccc; }
+#gallery3 div.books div.bookPrice {
+	float: left;
+	width: 180px;
+	height: 120px;
+	margin-left: 20px;
+	background-color: #616161;
+	position: relative;
+}
+.section .sub #gallery3 div.books div.bookPrice p {
+	position:absolute;
+	top: 45px;
+	left: 15px;
+	font-size: 3em;
+	color: #fff;
+	font-family:Arial, Helvetica, sans-serif;
+}
+/*----------------------Gallery Page Video subpage CSS------------------------------*/
+.section .sub #gallery2 .frames {
+	width: 880px;
+	margin: 0 40px;
+	border-top: 1px dashed #f1f1f1;
+	float: left;
+}
+.section .sub #gallery2 div.bigFrame, .section .sub #gallery2 div.smallFrame {
+	float: left;
+	margin: 20px 0 0 30px;
+	padding: 10px;
+	-moz-box-shadow: 1px 1px 4px #333;
+	-webkit-box-shadow:  1px 1px 4px #333;
+	box-shadow:  1px 1px 4px #333;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background-color: #313131;
+}
+.section .sub #gallery2 div.smallFrame { margin-right: 4px; }
+.section .sub #gallery2 div.second { margin-top: 40px; }
+.section .sub #gallery2 .frames p {
+	margin-top: 20px;
+	color: #f1f1f1;
+	font-family: 0.8em "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+.section .sub #gallery2 .subTitle a {
+	text-decoration: none;
+	font-size: 0.7em;
+	float: right;
+	margin-right: 80px;
+	margin-top: 20px;
+	color: #f1f1f1;
+}
+#gallery2 a:hover { color: #313131; }
+/*----------------------Direction Page CSS ------------------------------*/
+#map {
+	float: left;
+	width: 500px;
+	padding: 10px;
+	margin: 20px 0 0 20px;
+	-moz-box-shadow: 1px 1px 4px #333;
+	-webkit-box-shadow:  1px 1px 4px #333;
+	box-shadow:  1px 1px 4px #333;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background-color: #999;
+}
+#directionRight {
+	margin: 20px 20px 0 20px;
+	float: left;
+	width: 360px;
+	height: 495px;
+	padding: 10px;
+}
+#directionRight div {
+	margin: 15px 0 0 20px;
+	width: 320px;
+	padding: 5px;
+}
+#directionBottom {
+	float: left;
+	clear: left;
+	margin: 20px;
+	padding: 32px 10px 10px 10px;
+	width: 900px;
+	height: 163px;
+}
+#directionBottom div {
+	float: left;
+	margin-right: 23px;
+	width: 260px;
+	height: auto;
+	padding: 5px;
+}
+#directionBottom div:first-child { margin-left: 20px; }
+#direction div {
+	background-color: rgba(247, 243, 204, 0.5);
+	-moz-box-shadow: 1px 1px 4px #333;
+	-webkit-box-shadow:  1px 1px 4px #333;
+	box-shadow:  1px 1px 4px #333;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	padding-bottom: 20px;
+	font: 1em/1.6em "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #333;
+}
+#direction div div {
+	opacity: .25;
+	cursor: crosshair;
+}
+.colorHighlight {
+	color: #000;
+	font-weight: bold;
+}
+.navFont { color: #400000; }
+/*-------------------- Contact Page --- FAQ page css -------------*/
+ 
+  #contact3 {
+	overflow: scroll;
+	width: 960px;
+	height: 800px;
+}
+#contact3 h3 {
+	font-size: 1.2em;
+	color: #000;
+	margin-bottom: 15px;
+	margin-top: 5px;
+	width: 500px;
+	line-height: 1.6em;
+	clear: right;
+	margin-left: 20px;
+	font-weight:900;
+}
+#contact3 .subImage+h3 { margin-top: 20px; }
+#contact3 p {
+	font-family: Tahoma, Verdana, sans-serif;
+	font-size: 1em;
+	color: #333;
+	width: 600px;
+	line-height: 1.4em;
+	background-color: rgba(247, 243, 204, 0.5);
+	padding: 5px 10px;
+	-moz-box-shadow: 1px 1px 4px #333;
+	-webkit-box-shadow:  1px 1px 4px #333;
+	box-shadow:  1px 1px 4px #333;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	margin-left: 20px;
+}
+#contact3 .orderNumber {
+	color: #333;
+	font-style: italic;
+	margin-right: 5px;
+}
+#contact3 .toggleShow {
+	margin: 10px 300px 5px 0;
+	float: right;
+}
+#contact3 .showAnswer { margin-right: 10px; }
+#contact3 .subImage, #contact2 .subImage {
+	position: absolute;
+	top: 40px;
+	right: -15px;
+	-moz-transform: rotate(15deg);
+	-webkit-transform: rotate(15deg);
+	-o-transform: rotate(15deg);
+}
+/* --------------- ContactPage contact us page CSS-----------------------*/
+
+#contact2 form {
+	margin:0 0 0 20px;
+	padding:0;
+	width: 400px;
+	color:#333;
+	font:1em Arial, Verdanda, Helvetica, sans-serif;
+}
+#contact2 fieldset {
+	margin:20px 0;
+	border:none;
+	border-top:1px solid #f1f1f1;
+}
+#contact2 legend {
+	padding:0 .5em .5em;
+	color:#036;
+	font-size:1.2em;
+	font-weight:bold;
+	display: block;
+}
+#contact2 label {
+	float:left;
+	width:100px;
+	padding:0 1em;
+	text-align:right;
+}
+#contact2 fieldset div {
+	margin-bottom:.5em;
+	padding:0;
+	display:block;
+}
+#contact2 fieldset div input, #contact2 fieldset div textarea {
+	width:150px;
+	border-top:1px solid #555;
+	border-left:1px solid #555;
+	border-bottom:1px solid #ccc;
+	border-right:1px solid #ccc;
+	padding:1px;
+	color:#333;
+}
+#contact2 fieldset div select { padding:1px; }
+#contact2 div.fm-multi div { margin:15px 0; }
+#contact2 div.fm-multi input { width: 20px; }
+#contact2 div.fm-multi label {
+	display:block;
+	width:200px;
+	padding-left:5em;
+	text-align:left;
+}
+#contact2 #fm-submit {
+	clear:both;
+	padding-top:15px;
+	text-align:center;
+}
+#contact2 #fm-submit input {
+	border:1px solid #333;
+	padding:2px 1em;
+	background:#555;
+	color:#fff;
+	font-size:1em;
+}
+#contact2 input:focus, #contact2 textarea:focus {
+	background:#fff568;
+	color:#000;
+}
+#contact2 fieldset div.fm-req { font-weight:bold; }
+#contact2 fieldset div.fm-req label:before { content:"* "; }
+#contact2 #fm-newsopt-yes { margin-bottom: 10px; }
+/* --------------- ContactPage About us page CSS -----------------------*/
+.section .sub #contact1 #aboutUsText p {
+	font: 1em/1.6em Arial, Verdana, Helvetica, sans-serif;
+	margin-bottom: 20px;
+	color: #333;
+	background-color: rgba(247, 243, 204, 0.5);
+	-moz-box-shadow: 1px 1px 4px #333;
+	-webkit-box-shadow:  1px 1px 4px #333;
+	box-shadow:  1px 1px 4px #333;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	padding: 5px 10px;
+}
+.section .sub #contact1 #aboutUsText {
+	width: 485px;
+	float: left;
+	margin: 20px 0 20px 20px;
+	border-right: thin solid #FFF;
+	padding-right: 40px;
+}
+.section .sub #contact1 .highlight {
+	color: #000;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.section .sub #contact1 #aboutUsText2 {
+	font-size: 1.6em;
+	float: left;
+	width: 360px;
+	margin: 20px 0 0 30px;
+}
+.section .sub #aboutUsText2 h3 {
+	color: #313131;
+	font-size: 1.2em;
+	margin-bottom: 25px;
+}
+.section .sub #aboutUsText2 p {
+	color: #036;
+	margin-bottom: 20px;
+}
+.section .sub #aboutUsText2 img {
+	margin-top: 20px;
+	padding-right: 25px;
+}
