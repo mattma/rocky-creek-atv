@@ -104,7 +104,7 @@ body {
 	position:relative;
 	width:960px;
 	margin-top: -18px;
-	background: url(../_images/bg1.jpg) repeat;
+	background: url(../images/bg1.jpg) repeat;
 }
 .sections {
 	width: 5760px;
@@ -115,7 +115,7 @@ body {
 	height: 800px;
 	float: left;
 	position: relative;
-	background: url(../_images/bg1.jpg) repeat;
+	background: url(../images/bg1.jpg) repeat;
 }
 .sections .section .sub {
 	width: 960px;
@@ -502,7 +502,7 @@ body {
 }
 .navFont { color: #400000; }
 /*-------------------- Contact Page --- FAQ page css -------------*/
- 
+
   #contact3 {
 	overflow: scroll;
 	width: 960px;
